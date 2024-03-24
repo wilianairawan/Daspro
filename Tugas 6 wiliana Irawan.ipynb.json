@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "cell_type": "code",
+      "source": "first_name = input('Nama Depan : ')\nmiddle_name = input('Nama Tengah : ')\nlast_name = input('Nama Belakang : ')\n\nhari = input('Masukkan Tanggal lahir :')\nbulan = input('Masukkan Bulan lahir :')\ntahun = input('Masukkan Tahun lahir :')\n\nalamat = input('Tempat Tinggal :')\n\nhobi = input('Hobi :')\n\nstatus = input('Status :')\n\nprint(\"\")\nprint(\"====BIODATA====\")\nprint(\"\")\n\nprint(\"Nama           : {0} {1} {2}\". format(first_name,middle_name,last_name))\nprint(\"Lahir          : {0} {1} {2}\". format(hari,bulan,tahun))\nprint(\"Tempat Tinggal : {}\". format(alamat))\nprint(\"Hobi           : {}\". format(hobi))\nprint(\"Status         : {}\". format(status))",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "",
+          "output_type": "stream"
+        },
+        {
+          "name": "stdout",
+          "text": "\n====BIODATA====\n\nNama           : <PyodideFuture pending cb=[WebLoop._decrement_in_progress()]> <PyodideFuture pending cb=[WebLoop._decrement_in_progress()]> <PyodideFuture pending cb=[WebLoop._decrement_in_progress()]>\nLahir          : <PyodideFuture pending cb=[WebLoop._decrement_in_progress()]> <PyodideFuture pending cb=[WebLoop._decrement_in_progress()]> <PyodideFuture pending cb=[WebLoop._decrement_in_progress()]>\nTempat Tinggal : <PyodideFuture pending cb=[WebLoop._decrement_in_progress()]>\nHobi           : <PyodideFuture pending cb=[WebLoop._decrement_in_progress()]>\nStatus         : <PyodideFuture pending cb=[WebLoop._decrement_in_progress()]>\n",
+          "output_type": "stream"
+        }
+      ],
+      "execution_count": 4
+    },
+    {
+      "cell_type": "code",
+      "source": "kalimat = \"UNIVERSITAS NUSA PUTRA SUKABUMI\"\nkalimats = kalimat.split()\n\nprint(kalimat[-14:-9] + kalimat[-20:-15])\nprint(kalimat[1:11] + kalimat[11:13] + kalimat[14] + kalimat[15] + kalimat[16:18] + kalimat[19:22] + kalimat[22:24]+ kalimat[25:28] + kalimat [29:31])\nprint(kalimat[23:31] + kalimat[16:22] + kalimat[11:17] + kalimat[0:11])\nprint(kalimats[0][0] + kalimats[1][0] + kalimats[2][0] + kalimats[3][0])\nprint(kalimat[8:11], kalimat[14:16] + kalimat[17:19] + \" \" + kalimat[27:31])",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "PUTRA NUSA\nNIVERSITAS NSA PTRA SKABMI\nSUKABUMI PUTRA NUSA UNIVERSITAS\nUNPS\nTAS SAPU BUMI\n",
+          "output_type": "stream"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "cell_type": "code",
+      "source": "kalimat = \"UNIVERSITAS NUSA PUTRA SUKABUMI\"\na = kalimat.lower()\nb = a.split()\n\nprint(b[2][0:5], end=' ')\nprint(b[1][0:4])\n\nprint(b[0][1:11], end=' ')\nprint(b[1][0], end='')\nprint(b[1][2:4], end=' ')\nprint(b[2][0], end='')\nprint(b[2][2:5], end= ' ')\nprint(b[3][0], end= '')\nprint(b[3][2:4], end='')\nprint(b[3][4], end= '')\nprint(b[3][6:8])\n\nprint(b[3][0:8], end=' ')\nprint(b[2][0:5], end=' ')\nprint(b[1][0:4], end=' ')\nprint(b[0][0:11])\n\nprint(b[0][0] + b[1][0] + b[2][0] + b[3][0])\n\nprint(b[0][8:11], end=' ')\nprint(b[1][2:4],end='')\nprint(b[2][0:2],end=' ')\nprint(b[3][4:8])",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "putra nusa\nniversitas nsa ptra skabmi\nsukabumi putra nusa universitas\nunps\ntas sapu bumi\n",
+          "output_type": "stream"
+        }
+      ],
+      "execution_count": 2
+    }
+  ]
+}
